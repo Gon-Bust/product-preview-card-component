@@ -1,0 +1,129 @@
+:root {
+    --clr-primary-cream: hsl(30, 38%, 92%);
+    --clr-primary-dark-cyan: hsl(158, 36%, 37%);
+    --clr-neutral-dark-blue: hsl(212, 21%, 14%);
+    --clr-neutral-grayish: hsl(228, 12%, 48%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--clr-primary-cream);
+
+}
+
+h1 {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: var(--clr-neutral-dark-blue);
+    line-height: 3.8rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--clr-neutral-grayish);
+    line-height: 2.4rem;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 65rem;
+    height: 50rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1);
+
+    display: flex;
+    
+}
+
+.card__image {
+    height: 50rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.text-box {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--clr-primary-dark-cyan);
+    margin-right: 2rem;
+
+
+}
+
+.original-price {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    color: var(--clr-neutral-grayish);
+    text-decoration: line-through;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    padding: 1.4rem;
+    border-radius: .7rem;
+    border: none;
+    background-color: var(--clr-primary-dark-cyan);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    display: block;
+    width: 100%;
+} 
+
+button:hover {
+    background-color: var(--clr-neutral-dark-blue);
+}
+
+svg {
+    margin-right: 1rem;
+}
